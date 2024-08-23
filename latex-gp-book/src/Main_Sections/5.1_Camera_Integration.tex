@@ -1,0 +1,11 @@
+\subsection{Camera integration}
+In our DMS, we integrate the 8-megapixel IMX219-160IR Camera from Waveshare. 
+The camera features a CMOS sensor with a resolution of 3280 x 2464 pixels and a 1/4-inch sensor size. With an aperture of 2.35 and a focal length of 3.15mm, it offers a wide diagonal field of view (FOV) of 160 degrees, crucial for capturing a broad area within the vehicle cabin. The lens, measuring 6.5mm x 6.5mm, minimizes distortion to less than 14.3\%, ensuring accurate image representation for effective driver monitoring applications.
+
+\subsubsection{\textbf{Camera interface}}
+Data and clock signals are transmitted using CSI-2 interface utilizing 2Lanes Outputs of data and clock come from CSI-2 output pins (DMO1P/DMO1N, DMO2P/DMO2N, DCKP/DCKN). A pair of DMO1P/DMO1N is called Lane1 data and a pair of DMO2P/DMO2N is called Lane2 data. Also, clock signals come from CSI-2 output pins, DCKP/DCKN. Maximum output data rate is 912 Mbps/lane.
+
+Additionally, the IMX219 camera module employs a 2-wire serial communication method for sensor control, adhering to the Camera Control Interface (CCI) standard. CCI utilizes an I2C fast-mode plus interface with a clock frequency (fSCK) ranging from 11.4 to 27 MHz, ensuring compatibility with standard I2C protocols. This communication circuit allows access to control and status registers of the IMX219, facilitating precise configuration and monitoring of the camera's operations.
+
+Data is transferred serially, MSB first in 8-bit units. After each data byte is transferred, A (Acknowledge)/Ā (Acknowledge) is transferred. Data (SDA) is transferred at the clock (SCL) cycle. SDA can change only while SCL is Low, so the SDA value must be held while SCL is High. The Start condition is defined by SDA changing from High to Low while SCL is High. When the Stop
+condition is not generated in the previous communication phase and Start condition for the next communication is generated, that Start condition is recognized as a Repeated Start condition.

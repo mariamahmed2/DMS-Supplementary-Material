@@ -1,0 +1,94 @@
+\newpage
+\section{section}
+
+% for numbered list
+\begin{enumerate}
+    \item if want multiple items
+\end{enumerate}
+%----------------------------
+
+% for bullet points
+\begin{itemize}
+    \item if want multiple items
+\end{itemize}
+%----------------------------
+
+% for math equ
+\begin{equation}
+    \centering
+    for\_equation = write here 
+    \label{0}
+\end{equation}
+%----------------------------
+
+\subsection{Source Code} 
+
+%----------------------------
+% for citation
+as mentioned in this reference \cite{ref} %put the lable of the reference inside
+%----------------------------
+
+%----- adding code-----------
+\subsubsection{code section title}
+\lstinputlisting[language=Python, caption=Python Code Example]{Codes/C.py}
+%----------------------------
+
+%----adding image------------
+%1. single image
+
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[scale =0.3]{Images/ALEXU_1.jpg}
+     \caption{image caption}
+     \label{fig:enter}
+ \end{figure}
+
+%2. two images
+\begin{figure}[!h]
+  \centering
+  \begin{minipage}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Images/ALEXU_1.jpg}
+    \caption{adding 2 images }
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Images/ALEXU_1.jpg}
+    \caption{adding 2 images}
+  \end{minipage}
+\end{figure}
+%----------------------------
+
+%---- adding tables -----------
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{||c c c c||} 
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\ 
+ \hline
+ 2 & 7 & 78 & 5415 \\
+ \hline
+ 3 & 545 & 778 & 7507 \\
+ \hline
+ 4 & 545 & 18744 & 7560 \\
+ \hline
+ 5 & 88 & 788 & 6344 \\ [1ex] 
+ \hline
+\end{tabular}
+\end{center}
+\caption{Table to test captions and labels.}
+\label{table:1}
+\end{table}
+%----------------------------
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|c|}
+
+\includegraphics[width=\textwidth]{Images/ALEXU_1.jpg}
+
+\end{tabular}
+\end{center}
+\caption{aloooooooooooo}
+\label{table:1}
+\end{table}

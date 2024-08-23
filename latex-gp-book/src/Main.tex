@@ -1,0 +1,155 @@
+\documentclass[12pt,a4paper]{article}
+
+%---packages----
+\usepackage{setspace}
+\usepackage{hyperref,enumerate,float,amsfonts,amssymb,amsmath,graphics,graphicx,mathtools}
+\usepackage[margin=1.5 cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{bigfoot} % to allow verbatim in footnote
+\usepackage[numbered]{matlab-prettifier}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{piton}
+\usepackage{python}
+
+%Adding References 
+\usepackage[backend=bibtex,style=numeric]{biblatex} 
+\addbibresource{references.bib}
+\usepackage{hyperref,enumerate,float,amsfonts,amssymb,amsmath,graphics,graphicx,mathtools}
+\usepackage[margin=1.5 cm]{geometry}
+%\usepackage[hidelinks]{hyperref}
+
+
+
+%----define colors----
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\setlength{\parindent}{0pt}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+\lstdefinestyle{mystyle}{
+numbers = none,
+basicstyle=\ttfamily
+}
+
+\let\ph\mlplaceholder % shorter macro
+\lstMakeShortInline"
+
+\lstset{
+ style              = Matlab-editor,
+  basicstyle         = \mlttfamily,
+%  escapechar         = ",
+  mlshowsectionrules = true,
+}
+
+\onehalfspacing
+
+%-----------------------------------------------------------------
+%------------------
+%      document begin
+%------------------
+%-----------------------------------------------------------------
+\begin{document}
+
+\begin{titlepage}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\makeatletter
+
+\HRule \\[0.4cm] %Make horizontal line with space after 0.4cm
+
+ % Title of your document
+\huge{\bfseries \@g  Main\_title}
+
+\HRule \\[1.5cm] %Make horizontal line with space before 1.5cm
+
+
+%-----------------------------------------------------------------
+%------------------
+%      VERTICAL SPACE 
+%------------------
+%-----------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+\vspace*{\fill}
+%----------------------------------------------------------------------------------------
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	starting sections of document
+%----------------------------------------------------------------------------------------
+\input{Additional_Sections/1_Preface}
+\input{Additional_Sections/2_Acknowledgement}
+\input{Additional_Sections/3_Tables}
+\input{Additional_Sections/4_Abstract}
+\input{Additional_Sections/5_Introduction}
+
+
+\input{Main_Sections/1_AI}
+\input{Main_Sections/2_SIL}
+\input{Main_Sections/3_Decision_layer}
+\input{Main_Sections/4_Hardware_selection}
+\input{Main_Sections/5_App_deployment}
+\input{Main_Sections/6_Benchmark}
+\input{Main_Sections/7_Communication_module}
+\input{Main_Sections/8_Visualization}
+\input{Main_Sections/9_Linux_image}
+\input{Main_Sections/10_Conclusion}
+\input{Main_Sections/11_Future_work}
+
+\input{Additional_Sections/6_References}
+\input{Additional_Sections/7_Appendix}
+
+
+%____________________ To Be Removed _______________________
+\input{Templete_Files/Temp}
+
+\end{document}

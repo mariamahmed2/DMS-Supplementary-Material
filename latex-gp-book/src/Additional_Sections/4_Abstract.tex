@@ -1,0 +1,26 @@
+\newpage
+\section*{Abstract}
+
+
+Driver fatigue and distraction pose significant risks to road safety, emphasizing the critical need for Driver Monitoring Systems (DMS). These systems are pivotal in detecting and mitigating driver impairment, thereby improving overall road safety standards. However, existing solutions often face challenges related to real-time responsiveness and accuracy, which are crucial for effectively preventing accidents caused by distracted or drowsy driving.
+
+\vspace{\baselineskip}
+
+In response to these urgent challenges, this project aims to develop an innovative driver monitoring system. The primary objective is to create a robust system capable of classifying driver states into four categories: focused, sleepy, distracted, and drowsy. The system achieves this classification using a combination of computer vision and machine learning techniques. Key features include eye closure detection, gaze tracking, yawn detection, and head pose estimation, all fed from an infrared camera to ensure functionality under various lighting conditions.
+
+\vspace{\baselineskip}
+
+This system harnesses the capabilities of the Texas Instruments TDA4VM System on Chip (SoC), renowned for its high-performance computing tailored for automotive applications. By leveraging the TDA4VM SoC's dual-core 64-bit Arm Cortex-A72 processors, DSPs, and deep-learning accelerators, the system delivers high-performance, real-time driver monitoring. All processing is conducted on the edge, directly on the TDA4VM SoC, eliminating the need for distributed processing on external devices such as laptops or cloud servers. This design ensures the system is ready for seamless integration into smart car systems, providing a self-contained, real-time monitoring solution.
+
+\vspace{\baselineskip}
+
+Experimental results demonstrate the system's ability to accurately detect and classify driver states with a final accuracy of \textcolor{red}{90\%} and a processing rate of \textcolor{red}{17} frames per second (FPS). The results indicate significant improvements in both detection accuracy and system responsiveness, confirming the efficacy of the TDA4VM SoC in automotive safety applications.
+
+\vspace{\baselineskip}
+
+Moreover, we provide a mobile application and \textcolor{red}{communication module} to fit various use cases. This addition will allow for remote monitoring and alerts, facilitating scenarios such as fleet management or caregiver notifications. The mobile app will enable users to view real-time driver status updates, receive alerts for potential fatigue or distraction events, and access historical data for analysis and reporting purposes.
+
+\vspace{\baselineskip}
+
+By combining advanced hardware capabilities with user-friendly mobile applications, this integrated solution not only aims to elevate safety standards within vehicles but also sets a precedent for future innovations in automotive safety technology.
+
